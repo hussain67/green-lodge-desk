@@ -9,5 +9,5 @@ module.exports = {
 	rules: {
 		"react-refresh/only-export-components": ["warn", { allowConstantExport: true }]
 	},
-	rules: { "react/prop-types": "off" }
+	rules: { "react/prop-types": "off", "no-mixed-spaces-and-tabs": "off" } // disable rule
 };
