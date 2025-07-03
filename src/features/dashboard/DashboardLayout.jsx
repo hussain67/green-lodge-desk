@@ -29,7 +29,10 @@ function DashboardLayout() {
 				cabinCount={cabins.length}
 				numDays={numDays}
 			/>
-			<SalesChart />
+			<SalesChart
+				bookings={bookings}
+				numDays={numDays}
+			/>
 		</StyledDashboardLayout>
 	);
 }
