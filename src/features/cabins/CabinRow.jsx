@@ -69,17 +69,17 @@ function CabinRow({ cabin }) {
 						disabled={isCreating}
 						onClick={duplicateCabin}
 					>
-						<HiSquare2Stack />
+						<HiSquare2Stack style={{ color: "#8B5CF6" }} />
 					</button>
 					<button onClick={() => setShowForm(!showForm)}>
 						{" "}
-						<HiPencil />
+						<HiPencil style={{ color: "#3B82F6" }} />
 					</button>
 					<button
 						onClick={() => deleteCabin(cabinId)}
 						disabled={isDeleting}
 					>
-						<HiTrash />
+						<HiTrash style={{ color: "red" }} />
 					</button>
 				</div>
 			</TableRow>
