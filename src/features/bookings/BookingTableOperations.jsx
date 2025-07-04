@@ -18,7 +18,6 @@ const sortOptions = [
 	},
 	{ value: "totalPrice-asc", label: "Sort by amount (low first)" }
 ];
-// console.log(sortOptions);
 function BookingTableOperations() {
 	return (
 		<TableOperations>

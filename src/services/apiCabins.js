@@ -7,7 +7,6 @@ export async function getCabins() {
 		console.log("Data could not be loaded");
 		throw Error("Cabins could not be loaded");
 	}
-	// console.log(data);
 	return data;
 }
 
@@ -42,7 +41,6 @@ export async function createCabin(newCabin) {
 export async function editCabin(newCabin, id) {
 	const hasImagePath = newCabin.image?.startsWith?.(supabaseUrl);
 	console.log(newCabin.image);
-	// const imageName = hasImagePath ? newCabin?.image : `${Math.random()}-${newCabin.image.name}`.replaceAll("/", "");
 
 	const imageName = `${Math.random()}-${newCabin.image.name}`.replaceAll("/", "");
 

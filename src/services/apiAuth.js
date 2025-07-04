@@ -24,10 +24,8 @@ export async function login({ email, password }) {
 	});
 
 	if (error) {
-		// console.log(error.message);
 		throw new Error(error.message);
 	}
-	// console.log(data);
 	return data;
 }
 
@@ -36,7 +34,6 @@ export async function getCurrentUser() {
 	if (!session.session) return null;
 	const { data, error } = await supabase.auth.getUser();
 	if (error) throw new Error(error.message);
-	// console.log((data, error));
 	return data?.user;
 }
 

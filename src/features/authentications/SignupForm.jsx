@@ -10,9 +10,8 @@ function SignupForm() {
 	const { signup, isLoading } = useSignup();
 	const { register, formState, getValues, handleSubmit, reset } = useForm();
 	const { errors } = formState;
-	// console.log(errors);
+
 	function onFormSubmit({ fullName, email, password }) {
-		// console.log(email, fullName, password);
 		signup(
 			{ fullName, email, password },
 			{

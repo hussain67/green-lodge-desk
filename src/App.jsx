@@ -13,7 +13,6 @@ import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./ui/AppLayout";
 import { Toaster } from "react-hot-toast";
 import Cabins from "./pages/Cabins";
-// import ProtectedRoute from "./ui/ProtectedRoute";
 import { DarkModeProvider } from "./context/DarkModeContext";
 
 const queryClient = new QueryClient({
@@ -32,13 +31,7 @@ function App() {
 				<GlobalStyle />
 				<BrowserRouter>
 					<Routes>
-						<Route
-							element={
-								// <ProtectedRoute>
-								<AppLayout />
-								// </ProtectedRoute>
-							}
-						>
+						<Route element={<AppLayout />}>
 							<Route
 								index
 								element={
@@ -83,8 +76,6 @@ function App() {
 							element={<PageNotFound />}
 						/>
 					</Routes>
-
-					{/* <Cabins /> */}
 				</BrowserRouter>
 				<Toaster position="top-center" />
 			</QueryClientProvider>

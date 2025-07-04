@@ -32,7 +32,7 @@ const TableBody = styled.div`
 const TableFooter = styled.footer`
 	background-color: var(--color-grey-50);
 	display: flex;
-	/* justify-content: center; */
+
 	padding: 1.2rem;
 `;
 function BookingTable() {

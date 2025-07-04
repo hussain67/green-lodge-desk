@@ -45,7 +45,7 @@ function BookingRow({
 		"checked-in": "green",
 		"checked-out": "silver"
 	};
-	// console.log(id, created_at, startDate, endDate, numNights, numGuests, status, totalPrice, cabinName, guestName, email);
+
 	return (
 		<StyledBookingRow>
 			<div>{cabinName}</div>

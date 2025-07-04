@@ -3,20 +3,7 @@ import { PAGE_SIZE } from "../utils/constants";
 import { getToday } from "../utils/helpers";
 import supabase from "./supabase";
 
-//  REVIOUS VERSION
-// export async function getBookings() {
-// 	//  also select related fields from the table related to foreign key.
-// 	const { data, error } = await supabase.from("bookings").select("id, created_at, startDate, endDate, numNights, numGuests, status, totalPrice, cabins(name), guests(fullName, email)")
-
-// 	if (error) {
-// 		console.log("Data could not be loaded");
-// 		throw Error("bookings could not be loaded");
-// 	}
-// 	console.log(data);
-// 	return data;
-// }
 export async function getBookings({ filter, sortBy, page }) {
-	// console.log(filter);
 	//  also select related fields from the table related to foreign key.
 	let query = supabase.from("bookings").select("id, created_at, startDate, endDate, numNights, numGuests, status, totalPrice, cabins(name), guests(fullName, email)", { count: "exact" });
 

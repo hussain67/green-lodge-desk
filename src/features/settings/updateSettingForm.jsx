@@ -4,7 +4,6 @@ import Input from "../../ui/Input";
 import useSetting from "./useSetting";
 import Spinner from "../../ui/Spinner";
 import useUpdateSetting from "./useUpdateSetting";
-// import { updateSetting } from "../../services/apiSetting";
 
 function UpdateSettingForm() {
 	// Initial values

@@ -1,4 +1,3 @@
-// import { getCabins } from "../../services/apiCabins";
 import CabinTable from "./CabinTable";
 
 function Cabins() {

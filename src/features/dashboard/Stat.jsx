@@ -21,7 +21,6 @@ const Icon = styled.div`
 	justify-content: center;
 	align-items: center;
 	background-color: var(--color-${props => props.color}-100);
-	/* background-color: blue; */
 `;
 const Title = styled.h5`
 	background-color: var() (--color-grey-500);

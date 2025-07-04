@@ -1,8 +1,5 @@
-// import { getCabins } from "../../services/apiCabins";
-
 import { useState } from "react";
 import { Row } from "../../ui/Row";
-// import CreateCabinForm from "./CreateCabinForm";
 import Modal from "../../ui/Modal";
 import CreateCabinForm from "./CreateCabinForm";
 import Button from "../../ui/Button";
