@@ -66,11 +66,6 @@ function MainNav() {
 						<span>Settings</span>
 					</StyledNavLink>
 				</li>
-				<li>
-					<StyledNavLink>
-						<span></span>
-					</StyledNavLink>
-				</li>
 			</StyledList>
 		</nav>
 	);
