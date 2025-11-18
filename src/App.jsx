@@ -34,12 +34,7 @@ function App() {
 						<Route element={<AppLayout />}>
 							<Route
 								index
-								element={
-									<Navigate
-										// replace
-										to="dashboard"
-									/>
-								}
+								element={<Navigate to="dashboard" />}
 							/>
 							<Route
 								path="dashboard"

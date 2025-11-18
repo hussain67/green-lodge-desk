@@ -13,7 +13,6 @@ export function useBookings() {
 	const sortByRow = searchParams.get("sortBy") || "startDate-desc";
 	const [field, direction] = sortByRow.split("-");
 	const sortBy = { field, direction };
-	// console.log(sortBy);
 
 	// PAGINATION
 	const page = !searchParams.get("page") ? 1 : Number(searchParams.get("page"));

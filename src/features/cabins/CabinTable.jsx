@@ -28,7 +28,9 @@ function CabinTable() {
 
 	// Show spinner
 	if (isLoading) return <Spinner />;
-	if (error) console.log(error);
+	if (error) {
+		return <h2>{error.message}</h2>;
+	}
 
 	//****/ 1. Filter by discount ****/
 

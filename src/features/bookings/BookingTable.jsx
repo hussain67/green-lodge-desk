@@ -36,10 +36,10 @@ const TableFooter = styled.footer`
 	padding: 1.2rem;
 `;
 function BookingTable() {
-	const { isLoading, error, bookings, count } = useBookings();
-
-	console.log(isLoading, error);
+	const { isLoading, bookings = [], error, count } = useBookings();
 	if (isLoading) return <Spinner />;
+	if (!bookings.length) return <h2>Bookings could not be loaded</h2>;
+	if (error) return <h2>{error?.message}</h2>;
 	return (
 		<Table>
 			<TableHeader>
@@ -51,10 +51,10 @@ function BookingTable() {
 				<div></div>
 			</TableHeader>
 			<TableBody>
-				{bookings.map(booking => {
+				{bookings?.map(booking => {
 					return (
 						<BookingRow
-							key={booking.id}
+							key={booking?.id}
 							booking={booking}
 						/>
 					);
